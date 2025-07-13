@@ -26,7 +26,8 @@ const ClientCard = ({ client }) => {
           }}
         />
       </div>
-      <p className="client-card-description">"{client.description}"</p>
+      {/* Removed outer double quotes around client.description */}
+      <p className="client-card-description">{client.description}</p>
       <h3 className="client-card-name">{client.name}</h3>
       <p className="client-card-designation">{client.designation}</p>
     </div>
